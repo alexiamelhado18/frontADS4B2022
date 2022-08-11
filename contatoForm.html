@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Contato</title>
+</head>
+
+<body>
+    <script src="./contatoForm.js" defer></script>
+    <link href="./contatoForm.css" rel="stylesheet" media="all" />
+    <form name="meu_form">
+        <h1>Entre em contato</h1>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nomeid" placeholder="" required="required">
+        <br />
+        <label for="fone">Fone</label>
+        <input type="tel" name="fone" id="foneid" placeholder="" required="required">
+        <br />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="emailid" placeholder="" required="required">
+        <br />
+        <textarea id="opiniaoid" placeholder="Deixe sua opinião" required="required"></textarea>
+
+        <input type="submit" value="Enviar" class="enviar" onclick="Enviar();">
+        <input type="button" value="Salvar" class="salvar" onclick="Salvar();">
+    </form>
+    <table>
+        <colgroup>
+          <col class="column1">
+          <col class="columns2plus3" span="2">
+        </colgroup>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Fone</th>
+          <th>Opinião</th>
+        </tr>
+        <tr>
+          <td id="tdnome"></td>
+          <td id="tdemail"></td>
+          <td id="tdfone"></td>
+          <td id="tdopiniao"></td>
+        </tr>
+      </table>
+
+</body>
+
+</html>
